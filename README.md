@@ -1,6 +1,6 @@
 # Hospital Readmissions
 
-I explored a dataset from The Centers of Medicare and Medicaid Services that had information on the number of readmissions for hospitals across the US after treating patients for six different medical conditions. As not every hospital treats each condition, I split the hospitals into three categories: "general" hospitals that treat five or all six of the conditions, "specialized" hospitals that treat one or two of the conditions, and "neither" hospitals that threat three or four of the conditions. I then did hypothesis testing to determine if the rates of readmissioins for these different types are significantly different. Afterwards I further examined readmission rates for each type of hospital by medical condition and did hypothesis testing here too. I also examined readmission rates by state.
+I explored a dataset from The Centers of Medicare and Medicaid Services that had information on the number of readmissions for hospitals across the US after treating patients for six different medical conditions. As not every hospital treats each condition, I split the hospitals into three categories: "general" hospitals that treat five or all six of the conditions, "specialized" hospitals that treat one or two of the conditions, and "neither" hospitals that threat three or four of the conditions. I then did hypothesis testing to determine if the rates of readmissions for these different types are significantly different. Afterwards I further examined readmission rates for each type of hospital by medical condition and did hypothesis testing here too. I also examined readmission rates by state.
 
 ## The Data
 
@@ -16,7 +16,7 @@ I supplemented my analysis with information from the Population Reference Bureau
 
 ## The Six Medical Conditions in Data
 
-Hospitals were evaluated on six different medical condtions: Acute Myocardial Infarction (Heart Attack), Coronary Artery Bypass Graft Surgery, Chronic Obstructive Pulmonary Disease, Heart Failure, Hip/Knee Replacement, and Pneumonia.
+Hospitals were evaluated on six different medical conditions: Acute Myocardial Infarction (Heart Attack), Coronary Artery Bypass Graft Surgery, Chronic Obstructive Pulmonary Disease, Heart Failure, Hip/Knee Replacement, and Pneumonia.
     
 Below is a chart showing the six medical conditions and the percent for each condition of total patients treated:
 
@@ -26,7 +26,7 @@ Below is a chart showing the six medical conditions and the percent for each con
 
 ## Splitting Hospitals Into Type
 
-As I mentioned, not every hospital treats every condition. Some hospitals treat all six while others treat only one. The bar graph below shows how hospitals treat all six, five, four, three, two, and just one condition. I decided to group the hospitals that treat five or sixe as "general" hospitals, those that treat one or two conditions as "specialized" hospitals, and those that were neither general or specialized as "neither" hospitals.
+As I mentioned, not every hospital treats every condition. Some hospitals treat all six while others treat only one. The bar graph below shows how hospitals treat all six, five, four, three, two, and just one condition. I decided to group the hospitals that treat five or six as "general" hospitals, those that treat one or two conditions as "specialized" hospitals, and those that were neither general or specialized as "neither" hospitals.
 
 <p align="center">
 <img src="Images/num_fac_2.png" width="700" height="300">
@@ -65,23 +65,23 @@ I decided to dig a little deeper and explore what might be driving the low readm
 <img src="Images/all_conditions_table.png" width="800" height="300">
 <p/>
 
-Looking at these numbers, it is clear the large number of specialized hospitals that focus on hip/knee replacements (the medical condition with the lowest readmission rate) is bringing the average readmission rate for specialized hopsitals down. I decided to do hypothesis tests comparing each type of hospital for every medical condition. Below are my p-values.
+Looking at these numbers, it is clear the large number of specialized hospitals that focus on hip/knee replacements (the medical condition with the lowest readmission rate) is bringing the average readmission rate for specialized hospitals down. I decided to do hypothesis tests comparing each type of hospital for every medical condition. Below are my p-values.
 
 <p align="center">
 <img src="Images/all_p_value_table.png" width="800" height="280">
 <p/>
 
-The above table shows a much more complicated story. I did determine a statically significant difference in specialized hopsitals from both general and neither hospitals that supports specialized hospitals having lower rates (though the difference in rates is not that big). But I also determined specialized hospitals have higher rates or readmissions when treating pneumonia. I was also able to determine statistically significant differences in neither and general hospitals for some of the conditions, but general hospitals do no always have lower rates than neither hospitals.
+The above table shows a much more complicated story. I did determine a statically significant difference in specialized hospitals from both general and neither hospitals that supports specialized hospitals having lower rates (though the difference in rates is not that big). But I also determined specialized hospitals have higher rates or readmissions when treating pneumonia. I was also able to determine statistically significant differences in neither and general hospitals for some of the conditions, but general hospitals do no always have lower rates than neither hospitals.
 
 ## State Analysis
 
-Since, the CMS dataset had information about which state the hopsitals were located in, I was able to compare readmission rates by state. Below shows readmission rates by state for each of the six medical conditions. One of the more striking revelations from these charts is how much lower the readmission rates for Utah across all medical conditions seem to be compared to its neighbor Nevada. As a next step, I would want to explore that further. 
+Since, the CMS dataset had information about which state the hospitals were located in, I was able to compare readmission rates by state. Below shows readmission rates by state for each of the six medical conditions. One of the more striking revelations from these charts is how much lower the readmission rates for Utah across all medical conditions seem to be compared to its neighbor Nevada. As a next step, I would want to explore that further. 
 
 <p align="center">
 <img src="Images/combined_maps.png" width="1000" height="500">
 <p/>
 
-The other analysis I did by state was to look at the percentage of people over 65 living in each state who were being treated for these medical condtions. It seems a lot more over 65 year olds (as a percentage of population) are being treated in Kentucky and Mississippi than in other states. More analysis would need to be done to determine why, but a possible reason is a sicker 65+ population.
+The other analysis I did by state was to look at the percentage of people over 65 living in each state who were being treated for these medical conditions. It seems a lot more over 65 year olds (as a percentage of population) are being treated in Kentucky and Mississippi than in other states. More analysis would need to be done to determine why, but a possible reason is a sicker 65+ population.
 
 <p align="center">
 <img src="Images/patients_per_pop.png" width="600" height="400">
