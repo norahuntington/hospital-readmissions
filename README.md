@@ -26,7 +26,7 @@ Below is a chart showing the six medical conditions and the percent for each con
 
 ## Splitting Hospitals Into Type
 
-As I mentioned, not every hospital treats every condition. Some hospitals treat all six while others treat only one. The bar graph below shows how hospitals treat all six, five, four, three, two, and just one condition. I decided to group the hospitals that treat five or six as "general" hospitals, those that treat one or two conditions as "specialized" hospitals, and those that were neither general or specialized as "neither" hospitals.
+As I mentioned, not every hospital treats every condition. Some hospitals treat all six while others treat only one. The bar graph below shows how many hospitals treat all six, five, four, three, two, and just one condition. I decided to group the hospitals that treat five or six as "general" hospitals, those that treat one or two conditions as "specialized" hospitals, and those that were neither general or specialized as "neither" hospitals.
 
 <p align="center">
 <img src="Images/num_fac_2.png" width="700" height="300">
@@ -41,15 +41,7 @@ It looks like specialized hospitals have much lower readmission rates than the o
 
 ## Hypothesis Testings
 
-I wanted to do a hypothesis test comparing the readmission rate of specialized and general hospitals.
-
-My **Null Hypothesis** was: There is no difference in the average rate of readmissions for specialized and general hospitals.
-
-And my **Alternative Hypothesis** was: There is a difference in the average rate of readmissions for specialized and general hospitals.
-
-I decided to do a Welch T-test since my sample sizes were so different, and chose an alpha of 0.05.
-
-I also compared both general and specialized hospitals to neither hospitals. The resulting p-values from my test are below.
+I wanted to do a hypothesis test comparing the readmission rate of specialized and general hospitals. My **Null Hypothesis** was: There is no difference in the average rate of readmissions for specialized and general hospitals. And my **Alternative Hypothesis** was: There is a difference in the average rate of readmissions for specialized and general hospitals. I decided to do a Welch T-test since my sample sizes were so different, and chose an alpha of 0.05. I also compared both general and specialized hospitals to neither hospitals. The resulting p-values from my test are below.
 
 <p align="center">
 <img src="Images/rate_table.png" width="600" height="300">
@@ -71,7 +63,7 @@ Looking at these numbers, it is clear the large number of specialized hospitals 
 <img src="Images/all_p_value_table.png" width="800" height="280">
 <p/>
 
-The above table shows a much more complicated story. I did determine a statically significant difference in specialized hospitals from both general and neither hospitals that supports specialized hospitals having lower rates (though the difference in rates is not that big). But I also determined specialized hospitals have higher rates or readmissions when treating pneumonia. I was also able to determine statistically significant differences in neither and general hospitals for some of the conditions, but general hospitals do no always have lower rates than neither hospitals.
+The above table shows a much more complicated story. I did determine a statically significant difference in specialized hospitals from both general and neither hospitals that supports specialized hospitals having lower rates (though the difference in rates is not that big). But I also determined specialized hospitals have higher rates of readmissions when treating pneumonia. I was also able to determine statistically significant differences in neither and general hospitals for some of the conditions, but general hospitals do no always have lower rates than neither hospitals.
 
 ## State Analysis
 
@@ -81,7 +73,7 @@ Since, the CMS dataset had information about which state the hospitals were loca
 <img src="Images/combined_maps.png" width="1000" height="500">
 <p/>
 
-The other analysis I did by state was to look at the percentage of people over 65 living in each state who were being treated for these medical conditions. It seems a lot more over 65 year olds (as a percentage of population) are being treated in Kentucky and Mississippi than in other states. More analysis would need to be done to determine why, but a possible reason is a sicker 65+ population.
+The other analysis I did by state was to look at the percentage of people over 65 living in each state who were being treated for these medical conditions. It seems a lot more over 65 year olds (as a percentage of the over 65 population) are being treated in Kentucky, Mississippi, and Delaware than in other states. More analysis would need to be done to determine why, but a possible reason is a sicker 65+ population.
 
 <p align="center">
 <img src="Images/patients_per_pop.png" width="600" height="400">
